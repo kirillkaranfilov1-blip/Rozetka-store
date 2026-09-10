@@ -1,0 +1,417 @@
+.Product_box {
+    width: 1200px;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+/* КАРТОЧКА */
+
+.Product_kard {
+    min-height: 430px;
+    padding: 20px;
+
+    background: white;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.Product_kard:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* КАРТИНКА */
+
+.Product_kard img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+
+
+/* НАЗВАНИЕ */
+
+.Title {
+    font-size: 17px;
+    line-height: 22px;
+
+    margin-bottom: 10px;
+
+    color: #222;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+
+/* КАТЕГОРИЯ */
+
+.Product-category {
+    color: #888;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+
+/* ЦЕНА */
+
+.By-product {
+    color: #ff5a30;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+/* КНОПКА */
+
+.btnBy {
+    width: 100%;
+    height: 40px;
+
+    margin-top: auto;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #222;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btnBy:hover {
+    background: #ff5a30;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+
+/* ТОВАРЫ */
+
+.Product_box {
+    width: 1200px;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+/* КАРТОЧКА */
+
+.Product_kard {
+    width: 100%;
+    min-height: 450px;
+
+    padding: 20px;
+
+    background: white;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.Product_kard:hover {
+    transform: translateY(-5px);
+}
+
+
+/* КАРТИНКА */
+
+.Product_kard img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: contain;
+
+    margin-bottom: 20px;
+}
+
+
+/* НАЗВАНИЕ */
+
+.Title {
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #222;
+
+    margin-bottom: 10px;
+}
+
+
+/* КАТЕГОРИЯ */
+
+.Product-category {
+    color: #888;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+
+/* ЦЕНА */
+
+.By-product {
+    color: #ff5a30;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+/* КНОПКА */
+
+.btnBy {
+    width: 100%;
+    height: 40px;
+
+    margin-top: auto;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #222;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btnBy:hover {
+    background: #ff5a30;
+}
+.header {
+    width: 1200px;
+    height: 70px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+
+    background: white;
+}
+
+.logo {
+    color: #00a046;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.header button {
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.Image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+.header {
+    width: 1200px;
+    height: 70px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+
+    background: white;
+}
+
+.logo {
+    color: #00a046;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.burger {
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.Image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* ФИЛЬТРЫ */
+
+.filters {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 30%;
+    height: 100vh;
+
+    background: white;
+    padding: 30px;
+    box-sizing: border-box;
+
+    z-index: 1000;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.filters.active {
+    transform: translateX(0);
+}
+
+.filters.active {
+    display: block;
+}
+
+.filters h2 {
+    margin-bottom: 20px;
+
+    font-size: 22px;
+}
+
+
+/* SELECT */
+
+.filters select {
+    width: 100%;
+    height: 40px;
+
+    margin-bottom: 12px;
+
+    padding: 0 10px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+
+/* INPUT */
+
+.filters input {
+    width: 100%;
+    height: 40px;
+
+    margin-bottom: 12px;
+
+    padding: 0 10px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+.filters input:focus {
+    border-color: #00a046;
+}
+
+
+/* КНОПКИ СОРТИРОВКИ */
+
+.sort-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.sort-buttons button {
+    flex: 1;
+
+    height: 40px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #00a046;
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 13px;
+}
+
+.sort-buttons button:hover {
+    background: #008c3e;
+}
