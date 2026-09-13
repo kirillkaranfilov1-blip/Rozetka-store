@@ -249,3 +249,4 @@ sortDown.addEventListener("click", () => {
     ShowProducts(result);
 });
 Getproduct();
+

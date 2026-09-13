@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+
+    <div class="order-box">
+        <h1>Оформление заказа</h1>
+
+        <form>
+            <input type="text" placeholder="Ваше имя" required>
+
+            <input type="text" placeholder="Фамилия" required>
+
+            <input type="tel" placeholder="Номер телефона" required>
+
+            <input type="email" placeholder="Email" required>
+
+            <input type="text" placeholder="Город" required>
+
+            <input type="text" placeholder="Адрес доставки" required>
+
+            <select required>
+                <option value="">Способ оплаты</option>
+                <option value="card">Банковская карта</option>
+                <option value="cash">При получении</option>
+            </select>
+
+            <textarea placeholder="Комментарий к заказу"></textarea>
+
+            <button type="submit">Подтвердить заказ</button>
+        </form>
+
+        <a class="back" href="index.html">← Вернуться в магазин</a>
+   
+
+
+    <select id="post">
+    <option value="">Выберите службу доставки</option>
+    <option value="nova">Новая почта</option>
+</select>
+
+<select id="city" required>
+    <option value="">Выберите город</option>
+    <option value="odesa">Одесса</option>
+    <option value="kyiv">Киев</option>
+    <option value="lviv">Львов</option>
+    <option value="dnipro">Днепр</option>
+    <option value="kharkiv">Харьков</option>
+</select>
+
+<select id="department" required>
+    <option value="">Выберите отделение</option>
+</select>
+ </div>
+
+<script src="order.js"></script>
+</body>
+</html>
+
