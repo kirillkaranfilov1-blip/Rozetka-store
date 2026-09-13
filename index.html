@@ -1,68 +1,102 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rozetka Shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <header class="header">
-    <a class="logo" href="">Rozetka shop</a>
+
+    <header class="header">
+
+        <a class="logo" href="">
+            Rozetka shop
+        </a>
+
+        <div class="header-buttons">
+
+           <button class="cart-btn" id="cartBtn">
+        🛒
+    </button>
 
     <button class="burger" id="burger">
         <img class="Image" src="./1374128.png" alt="">
     </button>
-</header>
+
+        </div>
+
+    </header>
 
 
-<div class="filters" id="filters">
+    <div class="filters" id="filters">
 
-    <h2>Фильтры</h2>
+        <h2>Фильтры</h2>
 
-    <!-- КАТЕГОРИЯ -->
+        <select id="category">
+            <option value="all">
+                Все категории
+            </option>
+        </select>
 
-    <select id="category">
-        <option value="all">Все категории</option>
-    </select>
+        <input
+            type="text"
+            id="search"
+            placeholder="Название товара"
+        >
 
+        <input
+            type="number"
+            id="price"
+            placeholder="Максимальная цена"
+        >
 
-    <!-- НАЗВАНИЕ -->
+        <div class="sort-buttons">
 
-    <input
-        type="text"
-        id="search"
-        placeholder="Название товара"
-    >
+            <button id="sortUp">
+                Цена ↑
+            </button>
 
+            <button id="sortDown">
+                Цена ↓
+            </button>
 
-    <!-- ЦЕНА -->
-
-    <input
-        type="number"
-        id="price"
-        placeholder="Максимальная цена"
-    >
-
-
-    <!-- СОРТИРОВКА -->
-
-    <div class="sort-buttons">
-
-        <button id="sortUp">
-            Цена ↑
-        </button>
-
-        <button id="sortDown">
-            Цена ↓
-        </button>
+        </div>
 
     </div>
 
+
+    <div class="cart" id="cart">
+
+        <h2>
+            Корзина
+        </h2>
+
+        <div id="cartItems"></div>
+
+        <p>
+            Итого:
+            <span id="cartTotal">0</span>$
+        </p>
+
+        <button id="closeCart">
+            Закрыть
+        </button>
+
+    </div>
+    <div class="header-buttons">
+
+    
 </div>
 
 
-<div class="Product_box"></div>
+    <div class="Product_box"></div>
+
+
     <script src="./js.js"></script>
+
 </body>
 </html>
+
