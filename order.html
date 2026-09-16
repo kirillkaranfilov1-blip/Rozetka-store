@@ -12,54 +12,47 @@
     <div class="order-box">
         <h1>Оформление заказа</h1>
 
-        <form>
-            <input type="text" placeholder="Ваше имя" required>
+        <form id="orderForm">
 
-            <input type="text" placeholder="Фамилия" required>
+            <input id="name" type="text" placeholder="Ваше имя" required>
 
-            <input type="tel" placeholder="Номер телефона" required>
+            <input id="surname" type="text" placeholder="Фамилия" required>
 
-            <input type="email" placeholder="Email" required>
+            <input id="phone" type="tel" placeholder="Номер телефона" required>
 
-            <input type="text" placeholder="Город" required>
+            <input id="email" type="email" placeholder="Email" required>
 
-            <input type="text" placeholder="Адрес доставки" required>
-
-            <select required>
-                <option value="">Способ оплаты</option>
-                <option value="card">Банковская карта</option>
-                <option value="cash">При получении</option>
+            <select id="post" required>
+                <option value="">Выберите службу доставки</option>
+                <option value="Новая почта">Новая почта</option>
             </select>
 
-            <textarea placeholder="Комментарий к заказу"></textarea>
+            <select id="city" required>
+                <option value="">Выберите город</option>
+                <option value="Одесса">Одесса</option>
+                <option value="Киев">Киев</option>
+                <option value="Львов">Львов</option>
+                <option value="Днепр">Днепр</option>
+                <option value="Харьков">Харьков</option>
+            </select>
+
+            <select id="department" required>
+                <option value="">Выберите отделение</option>
+            </select>
+
+            <select id="payment" required>
+                <option value="">Способ оплаты</option>
+                <option value="Банковская карта">Банковская карта</option>
+                <option value="При получении">При получении</option>
+            </select>
+
+            <textarea id="comment" placeholder="Комментарий к заказу"></textarea>
 
             <button type="submit">Подтвердить заказ</button>
+
         </form>
-
         <a class="back" href="index.html">← Вернуться в магазин</a>
-   
-
-
-    <select id="post">
-    <option value="">Выберите службу доставки</option>
-    <option value="nova">Новая почта</option>
-</select>
-
-<select id="city" required>
-    <option value="">Выберите город</option>
-    <option value="odesa">Одесса</option>
-    <option value="kyiv">Киев</option>
-    <option value="lviv">Львов</option>
-    <option value="dnipro">Днепр</option>
-    <option value="kharkiv">Харьков</option>
-</select>
-
-<select id="department" required>
-    <option value="">Выберите отделение</option>
-</select>
- </div>
-
-<script src="order.js"></script>
+    </div>
+    <script src="order.js"></script>
 </body>
 </html>
-
